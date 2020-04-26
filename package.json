@@ -13,6 +13,7 @@
     "nodemon": "^2.0.3"
   },
   "scripts": {
-    "game": "nodemon ./src/index.js"
+    "game": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   }
 }
