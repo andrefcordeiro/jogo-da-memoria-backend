@@ -5,7 +5,7 @@ const routes = require('./routes')
 const app = express()
 var dotenv = require('dotenv')
 dotenv.config()
-var DB_KEY = process.env.MONGO_DB_API_KEY
+var DB_KEY = toString(process.env.MONGO_DB_API_KEY)
 
 mongoose.connect(DB_KEY, {
     useNewUrlParser: true,
