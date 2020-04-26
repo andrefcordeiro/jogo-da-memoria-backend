@@ -10,7 +10,6 @@ var DB_KEY = process.env.MONGO_DB_API_KEY
 mongoose.connect(DB_KEY, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useMongoClient: true
 })
 app.use(cors()) //libera o acesso interno para todos
 app.use(express.json())
