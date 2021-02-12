@@ -2,7 +2,7 @@ const Player = require("../models/Player");
 
 module.exports = {
 
-    //FUNÇÃO PARA LISTAR TODOS AS SENHAS
+    //FUNÇÃO PARA LISTAR TODOS OS JOGADORES
     async index(request, response) {
         const Players = await Player.find().then().catch((err) => { console.log(err) });
 
